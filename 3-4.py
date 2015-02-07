@@ -7,11 +7,22 @@ b = random.randrange(1,99)
 print a
 print b
 
-c = int(raw_input('What is the sum?'))
+
 # c = 10
 
 #c = raw_input('What is the sum?')
-if c == a + b:
-	print "True"
-else:
-	print "False"
+while True:
+	c = int(raw_input('What is the sum?'))
+	if c == a + b:
+		print "True"
+		break
+	else:
+		print "False"
+
+
+def is_number(s):
+    try:
+        float(s)
+        return True
+    except ValueError:
+        return False
