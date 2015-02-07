@@ -15,7 +15,6 @@ while len(a) != 9:
             a = raw_input("Enter a nine digit number:")
 
 
-
 d1 = int(a[0])
 d2 = int(a[1])
 d3 = int(a[2])
